@@ -1,0 +1,50 @@
+<header class="primary-header flex">
+    <div class="logo">
+      <img src="./assets/shared/logo.svg" alt="space turism logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" (click)="menuToggle()">
+       <span class="sr-only" aria-expanded="false">
+        Menu
+      </span>
+    </button>
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex underline-indicators" >
+          <li class="">
+            <a class="uppercase ff-sans-cond text-accent letter-spacing-2 underline-indicators" 
+                routerLink="/home" 
+                routerLinkActive="active-link"
+                aria-selected="true">
+              <span aria-hidden="true">00</span>
+              Home
+            </a>
+          </li>
+          <li class="">
+            <a class="uppercase ff-sans-cond text-accent letter-spacing-2 underline-indicators" 
+                routerLink="/destination"
+                routerLinkActive="active-link"
+                aria-selected="false">
+              <span aria-hidden="true">01</span>
+              Destination
+            </a>
+          </li>
+          <li class="">
+            <a class="uppercase ff-sans-cond text-accent letter-spacing-2 underline-indicators" 
+                routerLink="/crew"
+                routerLinkActive="active-link"
+                aria-selected="false">
+              <span aria-hidden="true">02</span>
+              Crew
+            </a>
+          </li>
+          <li class="">
+            <a class="uppercase ff-sans-cond text-accent letter-spacing-2 underline-indicators" 
+                routerLink="/technology"
+                routerLinkActive="active-link"
+                aria-selected="false">
+              <span aria-hidden="true">03</span>
+              Technology
+            </a>
+          </li>
+      </ul>
+    </nav>
+  </header>

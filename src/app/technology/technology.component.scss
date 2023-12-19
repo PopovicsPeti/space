@@ -1,0 +1,148 @@
+
+.technology-container {
+    background-size: cover;
+    background-position: bottom center;
+    background-image: url(../../assets/technology/tech-bg.jpg);
+}
+
+.grid-container--technology {
+    // grid-auto-flow: column;
+    // grid-template-rows: auto;
+    height: 65vh;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+        'nav'
+        'content'
+        'image';
+
+    .secondary-nav {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        grid-area: nav;
+        flex-direction: column;
+        max-width: 15vw;
+    }
+    
+    .tech-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 45vw;
+        margin-right: 20vw;
+        padding-bottom: 2rem;
+
+    }
+    
+    .tech-img {
+        position: absolute;
+        right: 0;
+        display: flex;
+        max-width: 35vw;
+        align-items: flex-end;
+
+        // grid-area: image;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1400px){
+    .tech-img {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .grid-container--technology {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+    
+        .secondary-nav {
+            flex-direction: row;
+            max-width: 100vw;
+            padding: 2rem 0;
+            .tech-btn{
+                font-size: 1.2rem;
+            }
+        }
+
+        .tech-desc {
+            margin: 0;
+            max-width: 80vw;
+            text-align: center;
+        }
+
+        .tech-img {
+            position: static;
+            max-width: 60vw;
+            img {
+                margin: auto;
+                width: 100%;
+                align-items: center;
+            }
+        }
+
+    }
+
+   
+
+}
+
+
+h1 {
+    margin: 3rem 0;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+.technology-btn {
+    background: transparent;
+}
+
+.active-tech {
+    color: hsl(var(--clr-dark));
+    background-color: hsl(var(--clr-white) / 1 );
+    
+}
+
+
+// .grid-test {
+//     color: white;
+//     grid-template-rows: 1fr;
+//     grid-template-columns: auto auto auto;
+//     grid-template-areas: 'a' 'b' 'c';
+
+//     .a {
+//         display: block;
+//         width: 30vw;
+//         height: 30vh;
+//         background-color: red;
+//         grid-area: a;
+//     }
+//     .b {
+//         display: block;
+//         width: 30vw;
+//         height: 30vh;
+//         background-color: blue;
+//         grid-area: b;
+//     }
+//     .c {
+//         display: block;
+//         width: 30vw;
+//         height: 30vh;
+//         background-color: green;
+//         grid-area: c;
+//     }
+// }

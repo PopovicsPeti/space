@@ -1,0 +1,29 @@
+
+<div class="technology-container bg-dark ">
+    <app-header></app-header>
+    <header class="container">
+        <h1 class="numbered-title"><span aria-hidden="true">03</span>Space lounch 101</h1>
+    </header> 
+
+    <main class=" grid-container--technology">
+        <div class="tab-list numbered-indicators flex secondary-nav">
+            <ng-container *ngFor="let tech of technology; let i">
+                <button class="tech-btn"
+                        [id]="i.id"
+                        (click)="activeTech(i.id)"
+                        (click)="updateTech(i)">
+                        {{tech.id + 1}}
+                    </button>
+            </ng-container>
+        </div>
+        <article class="tech-desc">
+            <h2 class="fs-700 uppercase ff-serif">{{ techId?.name }}</h2>
+            <p class="tech-desc-text">{{ techId?.description }}</p>
+        </article>
+        <div class="tech-img">
+            <img [src]="techId?.image" [alt]="techId?.name">
+        </div>
+    </main>
+    <app-footer></app-footer>
+</div> 
+

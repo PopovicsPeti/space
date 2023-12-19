@@ -1,0 +1,84 @@
+.destination-container {
+    background-size: cover;
+    background-position: bottom center;
+    background-image: url(../../assets/destination/destination-bg.jpg);
+}
+
+h1 {
+    margin: 1.5rem 0;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+
+
+.destination-btn {
+    background: transparent;
+}
+
+.planet-img {
+    img {
+        width: 100%;
+    }
+}
+
+.planet-desc {
+    padding-bottom: 2rem;
+    border: 0;
+    border-bottom: 1px solid hsl(var(--clr-light) / .3);
+}
+
+.planet-info{
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+
+    div{
+        padding-right: 2rem;
+    }
+
+    div > * {
+        margin-top: .5rem;
+    }
+}
+
+.active-planet {
+    
+    border-bottom: .2rem solid hsl(var(--clr-white) / 1 );
+    
+}
+
+@media (max-width: 560px) {
+    .planet-info {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 800px){
+    .grid-container {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        height: 100vh;
+    }
+
+    .planet-img {
+        align-self: start;
+        img {
+            margin: auto;
+            width: 60%;
+        }
+    }
+
+    .secondary-nav {
+        justify-content: center;
+    }
+
+    .planet-info{
+        justify-content: space-around;
+    }
+}

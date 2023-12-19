@@ -1,0 +1,31 @@
+<div class="crew-container bg-dark ">
+    <app-header></app-header>
+    <header class="container">
+        <h1 class="numbered-title"><span aria-hidden="true">02</span> Meet your crew</h1>
+    </header>
+    <main class="grid-container--crew">
+        <section class="grid-container">
+            <div>
+                <article >
+                    <h2 class="fs-500 uppercase ff-serif">{{ crewMember?.role }}</h2>
+                    <p class="fs-700">{{ crewMember?.name }}</p>
+                    <p class="">{{ crewMember?.bio }}</p>
+                </article>
+                <div class="tab-list dot-indicators flex secondary-nav">
+
+                    <ng-container *ngFor="let i; let crewMemb of crew">
+                        <button class="dot-indicators-list"
+                                [id]="i.id"
+                                (click)="activeCrewMember(i.id)"
+                                (click)="updateCrewMember(i)">
+                    </button>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="crew-img">
+                <img [src]="crewMember?.image" [alt]="crewMember?.name">
+            </div>
+        </section>
+    </main>
+    <app-footer></app-footer>
+</div>

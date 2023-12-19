@@ -1,0 +1,44 @@
+.grid-container {
+    height: 80vh;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+@media (min-width: 800px){
+    .grid-container--home {
+        padding-bottom: max(6rem, 20vh);
+        align-items: end;
+    }
+}
+
+.home-container {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: bottom center;
+    background-image: url(../../assets/home/bg-home-phone.jpg);
+}
+
+@media (min-width: 540px) {
+    .home-container {
+        background-image: url(../../assets/home/bg-home-tab.jpg);
+    }
+}
+
+@media (min-width: 800px) {
+    .home-container {
+        background-image: url(../../assets/home/bg-home-desk.jpg);
+    }
+}
+
+@media (max-width: 720px) {
+    .home-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+

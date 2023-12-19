@@ -1,0 +1,44 @@
+.crew-container {
+    background-image: url(../../assets/crew/crew-bg.jpg);
+    background-position: top left;
+    background-size: cover;
+}
+
+.secondary-nav {
+    margin-top: 2rem;
+}
+
+.grid-container {
+    height: 75vh;
+}
+
+@media (min-width: 800px) {
+    .tab-list {
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    .crew-img {
+        display: flex;
+        justify-items: baseline;
+    }
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        height: 100vh;
+    }
+
+    header > h1 {
+        margin: 2rem 0;
+    }
+
+    .tab-list {
+        justify-content: center;
+        margin-top: 3rem;
+    }
+}
+
+.active-member {
+    background-color: hsl( var(--clr-white) / 1);
+}

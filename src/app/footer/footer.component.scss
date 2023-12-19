@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 1rem;
+    padding: .5rem;
+    background: hsl(var(--clr-white) / 0.05);
+    backdrop-filter: blur(1.5rem);
+
+    p {
+        padding-inline: 1rem;
+    }
+}
+
+.footer {
+    justify-content: space-between;
+    align-items: center;
+}
+
+ 
+
